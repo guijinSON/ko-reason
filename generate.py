@@ -25,7 +25,7 @@ df = load_dataset(
                  ).to_pandas()
 
 
-N=4
+
 params = SamplingParams(
         temperature=0.6,top_p=0.95,
         top_k=20, min_p=0, max_tokens=16384, n=8
@@ -43,7 +43,7 @@ for batch in batched(df.instruction.values,500):
             )
     outputs = model.generate(qrys, params)
     dfs = []
-    for i in range(N):
+    for i in range(n):
         responses = [safe_parse(out,i) for out in outputs]
         dfs.append(
             pd.DataFrame({'query':batch,'responses':responses})
