@@ -43,7 +43,7 @@ for batch in batched(df.instruction.values,500):
             )
     outputs = model.generate(qrys, params)
     dfs = []
-    for i in range(n):
+    for i in range(8):
         responses = [safe_parse(out,i) for out in outputs]
         dfs.append(
             pd.DataFrame({'query':batch,'responses':responses})
