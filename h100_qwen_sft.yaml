@@ -10,7 +10,6 @@ datasets:
 dataset_prepared_path: preprocess
 val_set_size: 0.01
 output_dir: ./outputs
-dataloader_num_workers: 56
 
 adapter: 
 lora_model_dir:
