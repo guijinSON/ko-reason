@@ -58,5 +58,5 @@ fsdp:
   - auto_wrap
 fsdp_config:
   fsdp_state_dict_type: FULL_STATE_DICT
-  fsdp_transformer_layer_cls_to_wrap: LlamaDecoderLayer
+  fsdp_transformer_layer_cls_to_wrap:  Qwen2DecoderLayer
   fsdp_activation_checkpointing: true
