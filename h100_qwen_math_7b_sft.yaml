@@ -1,4 +1,4 @@
-base_model: Qwen/Qwen2.5-14B-Instruct
+base_model: Qwen/Qwen2.5-Math-7B-Instruct
 
 load_in_8bit: false
 load_in_4bit: false
