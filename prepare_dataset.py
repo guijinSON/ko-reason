@@ -21,4 +21,4 @@ for _,row in tqdm(df.iterrows(), total=len(df)):
     ])
 
 ds = pd.DataFrame(msg)
-ds.to_json("train.jsonl", lines=True, orient="records")
+ds.to_json("train_YS.jsonl", lines=True, orient="records")
