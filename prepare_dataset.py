@@ -3,8 +3,7 @@ from tqdm.auto import tqdm
 import pandas as pd
 
 df = load_dataset(
-    "KoReason/kor1-YiSang", split="train"
-    # "KoReason/ko-r1-3.2.5"
+    "XXXX/kor1-YiSang", split="train"
 ).to_pandas()
 
 msg = {"messages": []}
