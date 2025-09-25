@@ -19,10 +19,7 @@ model = LLM(model=model_name, tensor_parallel_size=torch.cuda.device_count())
 tokenizer = model.get_tokenizer()
 
 
-df = load_dataset(
-    'amphora/korean-stem',
-    token='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',split='train'
-                 ).to_pandas()
+df = load_dataset('XXXX/korean-stem',split='train').to_pandas()
 
 
 
